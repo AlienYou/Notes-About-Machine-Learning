@@ -24,7 +24,7 @@ predictions = -y' * log(sigmoid(X * theta)) - (1 - y') * log(1 - sigmoid(X * the
 J = 1 / m * sum(predictions);
 
 singleGrad = X' * (sigmoid(X * theta) - y);
-grad = 1 ./ m * singleGrad;
+grad = 1 / m * singleGrad;
 
 
 
